@@ -1,0 +1,99 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE8E3" />
+      <stop offset="50%" stop-color="#DDD9CE" />
+      <stop offset="100%" stop-color="#C8C2B3" />
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3467FF" />
+      <stop offset="60%" stop-color="#214DD1" />
+      <stop offset="100%" stop-color="#163799" />
+    </linearGradient>
+    <linearGradient id="beanieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222222" />
+      <stop offset="100%" stop-color="#0D0D0D" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5BA9A" />
+      <stop offset="100%" stop-color="#C99874" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#111111" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+
+  <!-- Streetwear Graffiti Splatters in Background -->
+  <path d="M650 150 C720 180 750 300 700 380 C650 460 550 420 520 340 C490 260 580 120 650 150 Z" fill="#3467FF" opacity="0.15" />
+  <path d="M120 700 C60 750 80 880 170 910 C260 940 310 820 280 750 C250 680 180 650 120 700 Z" fill="#FF6418" opacity="0.12" />
+
+  <!-- Abstract Graphic Shadow -->
+  <ellipse cx="400" cy="980" rx="340" ry="60" fill="#111111" opacity="0.35" />
+
+  <!-- Shoulders & Oversized Streetwear Hoodie -->
+  <path d="M80 1000 C100 800 210 680 320 640 L480 640 C590 680 700 800 720 1000 Z" fill="url(#hoodieGrad)" stroke="#111111" stroke-width="8" stroke-linejoin="round" />
+  
+  <!-- Hoodie Collar / Neckline & Layers -->
+  <path d="M300 640 C340 720 460 720 500 640 C480 770 320 770 300 640 Z" fill="#1D3E9E" stroke="#111111" stroke-width="6" />
+  <path d="M360 710 L340 850 M440 710 L460 850" stroke="#FFD329" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Streetwear White Inner Tee Collar -->
+  <path d="M350 620 C380 660 420 660 450 620 C420 645 380 645 350 620 Z" fill="#FFFFFF" stroke="#111111" stroke-width="5" />
+
+  <!-- Neck -->
+  <path d="M355 500 L355 630 C380 645 420 645 445 630 L445 500 Z" fill="url(#skinGrad)" stroke="#111111" stroke-width="7" />
+  <!-- Neck shadow -->
+  <path d="M355 520 C385 570 415 570 445 520 L445 540 C415 590 385 590 355 540 Z" fill="#111111" opacity="0.15" />
+
+  <!-- Head / Face Outline -->
+  <path d="M310 380 C310 520 370 560 400 560 C430 560 490 520 490 380 C490 280 430 250 400 250 C370 250 310 280 310 380 Z" fill="url(#skinGrad)" stroke="#111111" stroke-width="7" />
+
+  <!-- Ears -->
+  <path d="M300 370 C290 370 285 410 305 430 L315 420" fill="url(#skinGrad)" stroke="#111111" stroke-width="6" />
+  <path d="M495 370 C505 370 510 410 490 430 L480 420" fill="url(#skinGrad)" stroke="#111111" stroke-width="6" />
+  <circle cx="295" cy="415" r="4" fill="#FFD329" stroke="#111111" stroke-width="2" />
+
+  <!-- Facial Features (Stylized, Confident Modern Creative Director) -->
+  <!-- Eyebrows -->
+  <path d="M335 365 Q365 355 385 368" stroke="#111111" stroke-width="7" stroke-linecap="round" />
+  <path d="M415 368 Q435 355 465 365" stroke="#111111" stroke-width="7" stroke-linecap="round" />
+
+  <!-- Eyes -->
+  <ellipse cx="360" cy="390" rx="14" ry="9" fill="#FFFFFF" stroke="#111111" stroke-width="5" />
+  <circle cx="362" cy="390" r="6" fill="#111111" />
+  <circle cx="364" cy="388" r="2" fill="#FFFFFF" />
+
+  <ellipse cx="440" cy="390" rx="14" ry="9" fill="#FFFFFF" stroke="#111111" stroke-width="5" />
+  <circle cx="438" cy="390" r="6" fill="#111111" />
+  <circle cx="440" cy="388" r="2" fill="#FFFFFF" />
+
+  <!-- Nose -->
+  <path d="M398 385 L394 440 Q400 448 406 440" stroke="#111111" stroke-width="5" stroke-linecap="round" fill="none" />
+
+  <!-- Confident Smile -->
+  <path d="M365 480 Q400 505 435 480" stroke="#111111" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M362 480 L358 476 M438 480 L442 476" stroke="#111111" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Modern Hair Fringe Under Beanie -->
+  <path d="M320 320 C340 350 360 340 380 345 C410 340 440 345 470 320 Z" fill="#111111" />
+
+  <!-- Streetwear Ribbed Beanie (Inspired by reference image) -->
+  <path d="M290 310 C290 160 350 140 400 140 C450 140 510 160 510 310 Z" fill="url(#beanieGrad)" stroke="#111111" stroke-width="8" />
+  <!-- Beanie Cuff Ribbing -->
+  <path d="M280 310 C280 290 330 280 400 280 C470 280 520 290 520 310 C520 330 470 340 400 340 C330 340 280 330 280 310 Z" fill="#1A1A1A" stroke="#111111" stroke-width="8" />
+  <path d="M320 290 L320 330 M360 285 L360 335 M400 285 L400 335 M440 285 L440 335 M480 290 L480 330" stroke="#333333" stroke-width="4" />
+  
+  <!-- Embroidered Star Patch on Beanie -->
+  <path d="M400 205 L406 220 L422 222 L410 234 L413 250 L400 242 L387 250 L390 234 L378 222 L394 220 Z" fill="#FFD329" stroke="#111111" stroke-width="4" />
+
+  <!-- Silver Chain Necklace / Streetwear Accent -->
+  <path d="M340 680 C370 780 430 780 460 680" stroke="#EAE8E3" stroke-width="8" stroke-dasharray="12 4" stroke-linecap="round" fill="none" filter="url(#cardShadow)" />
+  <circle cx="400" cy="745" r="14" fill="#FF6418" stroke="#111111" stroke-width="4" />
+
+  <!-- Hand-drawn Graffiti Accent Marks -->
+  <path d="M200 480 L230 460 M205 505 L235 485" stroke="#FF6418" stroke-width="6" stroke-linecap="round" />
+  <path d="M570 540 L600 520 M575 565 L605 545" stroke="#3467FF" stroke-width="6" stroke-linecap="round" />
+</svg>

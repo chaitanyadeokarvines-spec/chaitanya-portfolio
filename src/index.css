@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F5F3EE;
+    --text-primary: #111111;
+    --color-orange: #FF6418;
+    --color-blue: #3467FF;
+    --color-yellow: #FFD329;
+    --color-grey: #EAE8E3;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-hand {
+  font-family: 'Caveat', cursive;
+}
+
+.font-marker {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* Streetwear Bubble Typography effect inspired by the reference image */
+.streetwear-bubble-orange {
+  color: #FF6418;
+  text-shadow: 
+    -2px -2px 0 #111111,
+     2px -2px 0 #111111,
+    -2px  2px 0 #111111,
+     2px  2px 0 #111111,
+     0px  4px 0 #111111,
+     3px  6px 0 #111111,
+     4px  8px 0 rgba(17, 17, 17, 0.4);
+}
+
+.streetwear-bubble-blue {
+  color: #3467FF;
+  text-shadow: 
+    -2px -2px 0 #111111,
+     2px -2px 0 #111111,
+    -2px  2px 0 #111111,
+     2px  2px 0 #111111,
+     0px  4px 0 #111111,
+     3px  6px 0 #111111,
+     4px  8px 0 rgba(17, 17, 17, 0.35);
+}
+
+.streetwear-bubble-yellow {
+  color: #FFD329;
+  text-shadow: 
+    -2px -2px 0 #111111,
+     2px -2px 0 #111111,
+    -2px  2px 0 #111111,
+     2px  2px 0 #111111,
+     0px  4px 0 #111111,
+     3px  6px 0 #111111,
+     4px  8px 0 rgba(17, 17, 17, 0.35);
+}
+
+/* Sticker Drop Shadow & Border Style */
+.sticker-card {
+  box-shadow: 4px 5px 0px #111111;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sticker-card:hover {
+  transform: translateY(-3px) rotate(0.5deg);
+  box-shadow: 6px 8px 0px #111111;
+}
+
+.sticker-btn {
+  box-shadow: 3px 4px 0px #111111;
+  transition: all 0.15s ease-out;
+}
+
+.sticker-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 0px #111111;
+}
+
+.sticker-btn:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 0px #111111;
+}
+
+/* Custom dashed outline and doodle effects */
+.doodle-border {
+  border: 2px dashed #111111;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F3EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6418;
+}
