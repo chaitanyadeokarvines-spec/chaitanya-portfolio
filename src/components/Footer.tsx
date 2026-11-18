@@ -1,6 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Mail, Phone, MessageCircle } from 'lucide-react';
 import { StarDoodle, SmileyDoodle } from './Doodles';
 
 export const Footer: React.FC = () => {
@@ -13,7 +13,8 @@ export const Footer: React.FC = () => {
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Portfolio', href: '#portfolio' },
-    { label: 'My Process', href: '#process' }
+    { label: 'My Process', href: '#process' },
+    { label: 'Contact', href: '#contact' }
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -49,6 +50,17 @@ export const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm max-w-sm font-medium">
               Creative thinking. Meaningful impact.
             </p>
+            <div className="pt-3 space-y-2 text-sm font-medium text-gray-300">
+              <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center gap-2 hover:text-[#FF6418] transition-colors">
+                <Mail className="w-4 h-4" /> {PERSONAL_INFO.email}
+              </a>
+              <a href={`tel:${PERSONAL_INFO.phoneRaw}`} className="flex items-center gap-2 hover:text-[#FF6418] transition-colors">
+                <Phone className="w-4 h-4" /> {PERSONAL_INFO.phone}
+              </a>
+              <a href={`https://wa.me/${PERSONAL_INFO.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#FF6418] transition-colors">
+                <MessageCircle className="w-4 h-4" /> WhatsApp
+              </a>
+            </div>
             <div className="pt-2 flex items-center gap-2 text-xs font-mono text-[#FFD329]">
               <span className="w-2 h-2 rounded-full bg-[#FF6418]" />
               <span>Available for worldwide remote collaborations</span>
