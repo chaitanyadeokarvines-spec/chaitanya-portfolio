@@ -7,6 +7,9 @@ import { Portfolio } from './components/Portfolio';
 import { Process } from './components/Process';
 import { Skills } from './components/Skills';
 import { ShowcaseBanner } from './components/ShowcaseBanner';
+import { Reveal } from './components/Reveal';
+import { Marquee } from './components/Marquee';
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -14,7 +17,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'portfolio', 'process'];
+      const sections = ['home', 'about', 'services', 'portfolio', 'process', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -42,12 +45,14 @@ export default function App() {
       {/* Main Content Area */}
       <main className="flex-grow">
         <Hero />
-        <About />
-        <Services />
-        <Portfolio />
-        <Process />
-        <Skills />
+        <Marquee />
+        <Reveal y={20}><About /></Reveal>
+        <Reveal y={20}><Services /></Reveal>
+        <Reveal y={20}><Portfolio /></Reveal>
+        <Reveal y={20}><Process /></Reveal>
+        <Reveal y={20}><Skills /></Reveal>
         <ShowcaseBanner />
+        <Contact />
       </main>
 
       {/* Footer */}

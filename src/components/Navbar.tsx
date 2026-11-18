@@ -23,7 +23,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Portfolio', href: '#portfolio' },
-    { label: 'My Process', href: '#process' }
+    { label: 'My Process', href: '#process' },
+    { label: 'Contact', href: '#contact' }
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -79,7 +80,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         {/* Zone 3: Primary Action & Mobile Toggle */}
         <div className="flex items-center gap-4 shrink-0">
           <a
-            href={`mailto:${PERSONAL_INFO.email}?subject=Project%20Inquiry%20%E2%80%94%20Let's%20Work%20Together`}
+            href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
             className="hidden sm:inline-flex items-center gap-2 bg-[#111111] text-white hover:bg-[#FF6418] hover:text-white px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider sticker-btn transition-colors whitespace-nowrap shrink-0 border border-black"
           >
             <span>Let's Work Together</span>
@@ -122,7 +124,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               );
             })}
             <a
-              href={`mailto:${PERSONAL_INFO.email}?subject=Project%20Inquiry%20%E2%80%94%20Let's%20Work%20Together`}
+              href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
               className="mt-2 w-full flex items-center justify-center gap-2 bg-[#111111] text-white py-3 rounded-full font-bold text-sm uppercase tracking-wider sticker-btn hover:bg-[#FF6418] transition-colors"
             >
               <span>Let's Work Together</span>

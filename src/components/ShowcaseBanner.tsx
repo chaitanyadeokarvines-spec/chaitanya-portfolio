@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { PERSONAL_INFO } from '../data/portfolioData';
 import { StarDoodle, ScratchDoodle, ArrowDoodle, SmileyDoodle, StarburstBadge } from './Doodles';
 
 export const ShowcaseBanner: React.FC = () => {
@@ -62,7 +61,7 @@ export const ShowcaseBanner: React.FC = () => {
         {/* CTA Button */}
         <div className="mt-10">
           <a
-            href={`mailto:${PERSONAL_INFO.email}?subject=Project%20Inquiry%20%E2%80%94%20Let's%20Create%20Something%20Great`}
+            href="#contact"
             className="inline-flex items-center gap-3 bg-[#111111] text-white hover:bg-[#FF6418] px-8 sm:px-10 py-4 sm:py-5 rounded-full font-display font-black text-sm sm:text-base uppercase tracking-wider sticker-btn border-2 border-[#111111] transition-all shadow-[6px_6px_0px_#111111]"
           >
             <span>Let's Create Something Great</span>
